@@ -74,7 +74,8 @@ function pageList(pages, links) {
 }
 
 async function listProductPage(link) {
-    await fetch(link)
+    const link_secure = 'https:' + link.split(':')[1]
+    await fetch(link_secure)
         .then(response => response.json())
         .then(data => {
             let products_container = document.getElementById('products-container')
