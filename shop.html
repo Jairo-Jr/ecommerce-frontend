@@ -30,7 +30,7 @@
         <p>Las mejores bebidas las encuentras aquí</p>
 
         <div class="search-input">
-            <input class="" type="email" placeholder="Buscar">
+            <input id="input_name" class="" type="email" placeholder="Buscar" onkeyup="filterProduct(null)">
             <button class="search-btn" type="submit"><i class="far fa-search"></i></button>
         </div>
 
@@ -39,21 +39,27 @@
                 <li id="category-select">
                     <a href="#">Categoria<i class="fas fa-chevron-down"></i></a>
                     <ul id="option" style="display: none;">
-                        <li><a href="#" onclick="clicky(1)">Item 1</a></li>
-                        <li><a href="#" onclick="clicky(2)">Item 2</a></li>
-                        <li><a href="#">Item 3</a></li>
-                        <li><a href="#">Item 4</a></li>
+                        <li><a href="#" onclick="filterProduct(0)">Todos</a></li>
+                        <li><a href="#" onclick="filterProduct(1)">Bebida energetica</a></li>
+                        <li><a href="#" onclick="filterProduct(2)">Pisco</a></li>
+                        <li><a href="#" onclick="filterProduct(3)">Ron</a></li>
+                        <li><a href="#" onclick="filterProduct(4)">Bebida</a></li>
+                        <li><a href="#" onclick="filterProduct(5)">Snack</a></li>
+                        <li><a href="#" onclick="filterProduct(6)">Cerveza</a></li>
+                        <li><a href="#" onclick="filterProduct(7)">Vodka</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
 
-        <div class="pro-container">
+        <h4 id="title-category">Todos</h4>
+        <div class="pro-container" id="products-container">
+
             <!-- Producto 1 -->
             <div class="pro">
                 <img src="images/f1.jpg" alt="imagen de producto">
                 <div class="des">
-                    <span>adidas</span>
+                    <span>-50%</span>
                     <h5>Cartoon Astronaut T-Shirts</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
@@ -67,103 +73,12 @@
                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
 
-            <!-- Producto 2 -->
-            <div class="pro">
-                <img src="images/f1.jpg" alt="imagen de producto">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-
-            <!-- Producto 3 -->
-            <div class="pro">
-                <img src="images/f1.jpg" alt="imagen de producto">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-
-            <!-- Producto 4 -->
-            <div class="pro">
-                <img src="images/f1.jpg" alt="imagen de producto">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-
-            <!-- Producto 5 -->
-            <div class="pro">
-                <img src="images/f1.jpg" alt="imagen de producto">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-
-            <!-- Producto 6 -->
-            <div class="pro">
-                <img src="images/f1.jpg" alt="imagen de producto">
-                <div class="des">
-                    <span>adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$78</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
         </div>
     </section>
 
     <section id="pagination" class="section-p1">
-        <a href="#"><i class="fal fa-long-arrow-alt-left"></i></a>
-        <a href="#">1</a>
+        <a href="#" onclick="">1</a>
         <a href="#">2</a>
-        <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
     </section>
 
     <script src="js/script.js"></script>

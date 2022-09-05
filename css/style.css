@@ -186,8 +186,8 @@ body {
 
 #product .pro .des span {
     color: #606063;
-    font-size: 12px;
-
+    font-size: 14px;
+    font-weight: 600;
 }
 
 #product .pro .des h5 {
@@ -203,7 +203,7 @@ body {
 
 #product .pro .des h4 {
     padding-top: 7px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 700;
     color: #088178;
 }
@@ -279,6 +279,10 @@ input {
     transition: color .25s;
 }
 
+#title-category {
+    text-align: start;
+    font-size: 24px;
+}
 .contenedor-menu {
     text-align: start;
     width: 20%;
@@ -329,10 +333,8 @@ input {
 
 #pagination a {
     text-decoration: none;
-    background-color: #088178;
     padding: 15px 20px;
-    border-radius: 4px;
-    color: #FFFFFF;
+    color: #088178;
     font-weight: 600;
 }
 
