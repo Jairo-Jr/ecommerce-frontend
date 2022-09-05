@@ -60,7 +60,7 @@ function filterProduct(idCategory) {
     let input_name = document.getElementById('input_name').value
     input_name === '' ? input_name = 'none' : false
     listProducts(id_category, input_name)
-    title_category.innerText = cateories[idCategory]
+    title_category.innerText = cateories[id_category]
 }
 
 function pageList(pages, links) {
